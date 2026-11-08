@@ -1,19 +1,21 @@
 # Chess.com Rating Evolution Tracker
 
-Script simples em Python para gerar um gráfico de evolução de rating no Chess.com baseado no **número total de partidas jogadas**, em vez das datas do calendário.
+A simple Python script to generate a Chess.com rating progression graph based on the **total number of games played**, rather than calendar dates.
 
-## Motivação
+## Motivation
 
-O gráfico original da plataforma utiliza a linha do tempo (datas). Quando o jogador passa meses sem jogar, a visualização da evolução fica distorcida por causa dos longos intervalos em branco. 
+The platform's original graph uses a timeline (dates). When a player takes several months off, the visualization of their rating progression becomes distorted by long periods of inactivity.
 
-Ao mudar o eixo X para a **quantidade sequencial de partidas**, fica mais fácil identificar:
-* A evolução real por volume de jogo e experiência.
-* Platôs de aprendizado e quedas bruscas (*tilt*).
-* O progresso contínuo sem a interferência de períodos de pausa.
+By changing the X-axis to the **sequential number of games played**, it becomes easier to identify:
 
-## Pré-requisitos
+* Actual rating progression based on playing volume and experience.
+* Learning plateaus and sudden rating drops (*tilt*).
+* Continuous progress without the interference of inactivity periods.
 
-Instale as dependências com o pip:
+## Requirements
+
+Install the dependencies using pip:
 
 ```bash
 pip install requests pandas matplotlib
+```
